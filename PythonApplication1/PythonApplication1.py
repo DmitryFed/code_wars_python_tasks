@@ -14,9 +14,6 @@ def queue_time(customers, n):
    return max(l)
 
 
-
-
-
 def solution(s):
   
     result = [];
@@ -29,4 +26,6 @@ def solution(s):
 
     return result
 
- 
+def create_phone_number(n):
+	return "({}{}{}) {}{}{}-{}{}{}{}".format(*n)
+
