@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2c6e768-15e1-429c-a2e2-51a396f909db": {
+      "ProjectGuid": "a2c6e768-15e1-429c-a2e2-51a396f909db",
+      "DisplayName": "PythonApplication1",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
