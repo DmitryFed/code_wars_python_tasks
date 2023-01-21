@@ -56,5 +56,4 @@ def persistence(n):
           counter += 1       
     return counter 
 
-print(persistence(10))
 
