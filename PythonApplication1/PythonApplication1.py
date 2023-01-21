@@ -39,9 +39,22 @@ def likes(names):
         4: '{}, {} and {others} others like this'
     }[min(4, n)].format(*names[:3], others=n-2)
  
-    
+# url: https://www.codewars.com/kata/55bf01e5a717a0d57e0000ec/train
+# example: 123 -> 1*2*3 -> 6 (return 1)
+# example: 999 -> 9*9*9 -> 729-> 7*2*9 ->126 -> 1*2*6 -> 12 -> 1*2 ->2 (return 4)
+def persistence(n):
+    mutable_number = 1 
+    counter = 0 
+    if n < 10: return 0
+    while n > 0:
+       mutable_number*=n%10
+       n//=10 
+       if n == 0:
+          n = mutable_number
+          mutable_number = 1 
+          if n < 10: break
+          counter += 1       
+    return counter 
 
-    
-    
+print(persistence(10))
 
- 
